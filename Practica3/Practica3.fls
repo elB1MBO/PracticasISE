@@ -217,6 +217,22 @@ INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT Practica3.toc
 INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmbx12.tfm
 INPUT D:\Universidad\Latex\fonts\tfm\jknappen\ec\tcrm0800.tfm
+INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmsl10.tfm
+INPUT D:\Universidad\Latex\tex\latex\base\omlcmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omlcmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omlcmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omlcmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT .\htop de mysql.png
+INPUT .\htop de mysql.png
+INPUT htop de mysql.png
+INPUT .\htop de mysql.png
+INPUT .\htop de mysql.png
+INPUT .\htop de mysql.png
+INPUT .\htop de mysql.png
 INPUT Practica3.aux
 INPUT C:\Users\rauld\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0800.pk
 INPUT C:\Users\rauld\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0800.pk
@@ -224,6 +240,8 @@ INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -232,3 +250,7 @@ INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
