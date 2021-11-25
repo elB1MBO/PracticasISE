@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[pdftex,usenames,dvipsnames]{color}
+\usepackage{multicol}
+\begin{document}
+  \pagestyle{plain}
+  \begin{center}
+    \Huge\textsc{\textbf{\underline{TITULO}}}
+  \end{center}
+  \label{texto_rojo}\normalsize\textcolor{Red}{ESTE TEXTO ESTÁ EN ROJO}
+  \clearpage
+  Segunda pagina: \newline
+  \ref{texto_rojo}Referencia al texto en rojo. Enumerado:\newline
+  \begin{enumerate}
+    \item Primer ítem,
+    \item Segundo ítem, y
+    \item Tercer \'{\i}tem.
+  \end{enumerate}
+  Descripción:
+  \begin{description}
+    \item[Nombre] Raúl
+    \item[Apellidos] Durán Racero
+    \item[Apodo] Bimbo   
+  \end{description}
+
+  Podemos anidar las listas:
+  \begin{itemize}
+    \item Frases fesquitas del juja:
+    \begin{enumerate}
+      \item Hola bom día
+      \item Finalmentch
+      \item Gente soy regil
+    \end{enumerate}
+    \item pleitos pleitos
+    \begin{enumerate}
+      \item Primero
+      \begin{enumerate}
+        \item Segundo
+        \begin{enumerate}
+          \item Tercero
+          \begin{enumerate}
+            \item Se pueden anidar como máximo 4
+          \end{enumerate}
+        \end{enumerate}
+      \end{enumerate}
+    \end{enumerate}
+  \end{itemize}
+
+  Tablita:
+\begin{tabular}{|p{3cm}|p{5cm}|c|}
+  \hline 
+  Edad & Altura & Peso  \\
+  \hline 
+  5 & 105 & 25  \\
+  \hline 
+  10  & 120 & 35  \\
+  \hline
+\end{tabular}
+
+Este es un texto \footnote{nota al pie de pagina de este texto} 
+con una nota al pie de página, y aquí hay otra\footnote{matoncillo puto} 
+nota.
+\label{Latex_Basico}Introducción a LaTeX
+\newpage
+\begin{thebibliography}{99}
+  \bibitem[Opc1]{Etiqueta1} primer elemento de la bibliografía
+  \bibitem[Opc1]{Etiqueta2} segundo elemento de la bibliografía
+  \bibitem[Opc2]{Etiqueta3} Para aprender a crear este archivo \LaTeX
+  se ha utilizado el guión de Introducción a \LaTeX de Jeronimo Alaminos. 
+  \cite[2]{Jeronimo Alaminos}
+\end{thebibliography}
+
+\end{document}
