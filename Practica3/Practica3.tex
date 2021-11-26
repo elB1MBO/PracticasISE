@@ -28,7 +28,7 @@
     language=bash, 
     basicstyle=\footnotesize\color{black},
     backgroundcolor=\color{white},
-    morekeywords={durar@localhost}, keywordstyle=\color{red},
+    morekeywords={durar@localhost, start}, keywordstyle=\color{red},
     classoffset=1,
     showspaces=false,
     showstringspaces=false,
@@ -155,11 +155,64 @@ Empezamos instalando el repositorio de Zabbix y el paquete del agente:
 \begin{lstlisting}[style=bashCentOS]
     [durar@localhost ~]$ sudo rpm -Uvh https://repo.zabbix.com/zabbix/5.0/rhel/8/x86_64/zabbix-release-5.0-1.el8.noarch.rpm
     [durar@localhost ~]$ dnf clean all
-    [durar@localhost ~]$ sudo dnf install zabbix-server-mysql zabbix-web-mysql zabbix-apache-conf zabbix-agent
+    [durar@localhost ~]$ sudo dnf install zabbix-agent
+\end{lstlisting}
+Hay que cambiar el archivo de configuración en /etc/zabbix/zabbix\_agentd.conf, modificando los valores 
+que se muestran resaltados en las siguientes capturas:
+\newpage
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{cambiandoConfZabbigAgent1.png}
+    \includegraphics[width=0.8\textwidth]{cambiandoConfZabbigAgent2.png}
+\end{figure}
+Iniciamos y establecemos el proceso del agente de Zabbix:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ systemctl enable zabbix-agent
+    [durar@localhost ~]$ systemctl start zabbix-agent
 \end{lstlisting}
 
 \subsection{Configuración}
-
+Ya tenemos el frontend de Zabbix en el navegador, así que ahora añadimos las máquinas que hay que monitorizar.
+El host de UbuntuServer viene por defecto con la instalación que hicimos previamente. Este host se encarga 
+de monitorizar el propio servidor. Nos falta el de CentOS, así que lo creamos:
+Configuration -\textgreater Hosts -\textgreater Create Host y añadir los datos siguientes:
+\newpage
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{creando host centos.png}
+\end{figure}
+Nos daremos cuenta de que el puerto que se utiliza es el 10050, como señala la flecha, así que tendremos 
+que abrir dicho puerto en CentOS.
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ sudo firewall-cmd --add-port=10050/tcp --permanent
+    [durar@localhost ~]$ sudo firewall-cmd --add-port=10050/tcp
+    [durar@localhost ~]$ sudo firewall-cmd --reload
+\end{lstlisting}
+Ya tenemos el puerto abierto y el host de CentOS, así que ya podemos monitorizar ambas máquinas.
+Nos piden que monitoricemos los servicios SSH y HTTP en ambas máquinas. Para ello, tenemos que añadir
+un nuevo item para cada servicio en las dos máquinas. 
+Así que nos dirigimos a Configuration -\textgreater Hosts -\textgreater Zabbix server -\textgreater
+Items, le damos a Create Item e introducimos los datos que se muestran en las figuras. Repetimos como 
+corresponda para el resto de items.
+\newline
+\begin{figure}[hbt!]
+    \caption{SSH de UbuntuServer}
+    \includegraphics[width=\textwidth]{creando item ssh.png}
+\end{figure} 
+\newpage
+\begin{figure}
+    \caption{SSH de CentOS}
+    \includegraphics[width=\textwidth]{monitor ssh centos.png}
+\end{figure}
+Para monitorizar el servicio HTTP en UbuntuServer, queremos comprobar si funciona el servicio de apache.
+Zabbix ya nos ofrece un \textsl{Template} configurado para Apache, así que lo utilizaremos:
+\begin{figure}[hbt!]
+    \caption{HTTP para UbuntuServer}
+    \includegraphics[width=\textwidth]{http para ubunut.png}
+\end{figure}
+El tipo que hemos escogido en los monitores es Simple Check, ya que lo que queremos es que simplemente
+que compruebe si el servicio está activo o no. La key la podemos selectionar en el botón \textsl{Select}.
+Además, podemos modificar el intervalo con el que se actualizan los datos monitorizados.
 \section{Ansible}
 Ansible: playbooks, y que lo malo de ansible all -a ... es que solo sirve si se tiene 
 el mismo usuario en las distintas máquinas y todas se comunican por el mismo puerto.
