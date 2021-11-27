@@ -472,14 +472,14 @@ Package rerunfilecheck Info: File `Practica3.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  11869 strings out of 478699
- 182990 string characters out of 2858265
+ 182981 string characters out of 2858265
  810422 words of memory out of 3000000
  29726 multiletter control sequences out of 15000+600000
  408375 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,63p,343b,1310s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\rauld\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Practica3.pdf (12 pages, 607603 bytes).
+Output written on Practica3.pdf (12 pages, 607597 bytes).
 PDF statistics:
  251 PDF objects out of 1000 (max. 8388607)
  83 named destinations out of 1000 (max. 500000)
