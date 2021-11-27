@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{hyperref}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -192,7 +193,7 @@ Ya tenemos el puerto abierto y el host de CentOS, así que ya podemos monitoriza
 Nos piden que monitoricemos los servicios SSH y HTTP en ambas máquinas. Para ello, tenemos que añadir
 un nuevo item para cada servicio en las dos máquinas. 
 Así que nos dirigimos a Configuration -\textgreater Hosts -\textgreater Zabbix server -\textgreater
-Items, le damos a Create Item e introducimos los datos que se muestran en las figuras. Repetimos como 
+Items, le damos a \textsl{Create Item} e introducimos los datos que se muestran en las figuras. Repetimos como 
 corresponda para el resto de items.
 \newline
 \begin{figure}[hbt!]
@@ -210,10 +211,82 @@ Zabbix ya nos ofrece un \textsl{Template} configurado para Apache, así que lo u
     \caption{HTTP para UbuntuServer}
     \includegraphics[width=\textwidth]{http para ubunut.png}
 \end{figure}
-El tipo que hemos escogido en los monitores es Simple Check, ya que lo que queremos es que simplemente
-que compruebe si el servicio está activo o no. La key la podemos selectionar en el botón \textsl{Select}.
-Además, podemos modificar el intervalo con el que se actualizan los datos monitorizados.
-\section{Ansible}
-Ansible: playbooks, y que lo malo de ansible all -a ... es que solo sirve si se tiene 
-el mismo usuario en las distintas máquinas y todas se comunican por el mismo puerto.
+\newpage
+\begin{figure}[]
+    \caption{HTTP para CentOS}
+    \includegraphics[width=\textwidth]{http centos.png}
+\end{figure}
+El tipo que hemos escogido en los monitores es \textsl{entering}, ya que lo que queremos es que simplemente
+que compruebe si el servicio está activo o no. La \textsl{key} la podemos selectionar en el botón \textsl{Select}.
+Además, podemos modificar el intervalo con el que se actualizan los datos monitorizados 
+(\textsl{Update Interval}).
+
+
+\section{Ejercicio 2}
+Usted deberá saber cómo instalar y configurar Ansible para poder hacer
+un ping a las máquinas virtuales de los servidores y ejecutar un comando básico (p.ej. el
+script de monitorización del RAID1). También debe ser consciente de la posibilidad de
+escribir acciones más complejas mediante playbooks escritos con YAML.
+\newline
+Se nos pide instalar y configurar Ansible para poder hacer ping a nuestras máquinas virtuales de 
+los servidores, nos hace falta otra máquina que sea la que hace ping. Por eso, clonaremos una de las dos
+(en mi caso lo haré en CentOS, por simpleza en la instalación), le cambiaremos su IP para que no 
+coincida con la original e instalaremos en ella Ansible. 
+Lo primero será, una vez clonada la máquina, cambiar su IP como hicimos en la práctica 1:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ sudo vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
+\end{lstlisting}
+La Ip de la nueva máquina será \textbf{192.168.56.111}. Reiniciamos para aplicar los cambios y
+comprobamos la IP con \textsl{ifconfig}.
+Ahora toca instalar Ansible:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ sudo yum install epel-release
+    [durar@localhost ~]$ sudo yum install ansible
+\end{lstlisting}
+Una vez, instalado, lo coniguramos editando el archivo /etc/ansible/hosts y añadimos las IPs de nuestras
+máquinas, con el puerto 22022, junto a una etiqueta que forme el grupo.
+\newpage
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{cambiando conf de ansible1.png}
+\end{figure}
+Ansible se comunica con las máquinas remotas mediante el protocolo SSH, así que al igual que en la 
+práctica anterior, crearemos y añadiremos la clave pública a las máquinas:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ ssh-keygen
+    [durar@localhost ~]$ ssh-copy-id 192.168.56.110 -p 22022
+    [durar@localhost ~]$ ssh-copy-id 192.168.56.105 -p 22022
+\end{lstlisting}
+Comprobamos con ssh que se han copiado bien, y hacemos ping:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ ansible -m ping "maquinasservers"
+\end{lstlisting}
+Nos dará una salida como esta:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{salida de ansible ping.png}
+\end{figure}
+\newline También podemos ejecutar el script de monitorización del RAID1 que vimos en clase:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ ansible "maquinasservers" -a "python3 mon_raid.py"
+\end{lstlisting}
+Ansible nos permite escribir acciones más complejas mediante unos documentos YAML, los \textsl{playbooks}.
+Crearemos uno que cree un archivo temporal y nos muestre el estado del servicio SSH:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{mi playbook.png}
+\end{figure}
+\newline Para ejecutarlo:
+\begin{lstlisting}[style=bashCentOS]
+    [durar@localhost ~]$ ansible-playbook myplaybook.yaml
+\end{lstlisting}
+Nos dará la siguiente salida:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{salida de playbook.png}
+\end{figure}
+\newline Vemos que nos muestra un warning por el touch, y nos dice como solucionarlo o ignorarlo, pero 
+acepta la otra tarea, que se ejecuta correctamente.
+\newpage
+
 \end{document}
