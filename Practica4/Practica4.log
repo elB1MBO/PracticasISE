@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.18)  7 DEC 2021 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.18)  8 DEC 2021 20:13
 entering extended mode
 **d:/Universidad/Tercero/ISE/Practica4/Practica4.tex
 (d:/Universidad/Tercero/ISE/Practica4/Practica4.tex
@@ -333,7 +333,7 @@ LaTeX Info: Redefining \nameref on input line 43.
 \@outlinefile=\write3
 \openout3 = `Practica4.out'.
 
-<benchmarking004.png, id=27, 702.625pt x 378.41376pt>
+<benchmarking004.png, id=35, 702.625pt x 378.41376pt>
 File: benchmarking004.png Graphic file (type png)
 <use benchmarking004.png>
 Package pdftex.def Info: benchmarking004.png  used on input line 50.
@@ -349,7 +349,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 53.
-<logoEtsiit.pdf, id=28, 329.73187pt x 427.5975pt>
+<logoEtsiit.pdf, id=36, 329.73187pt x 427.5975pt>
 File: logoEtsiit.pdf Graphic file (type pdf)
 <use logoEtsiit.pdf>
 Package pdftex.def Info: logoEtsiit.pdf  used on input line 55.
@@ -368,54 +368,145 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `Practica4.toc'.
 
  [2] [3]
-<resultado_sudokut1.png, id=75, 613.0905pt x 384.2355pt>
+<resultado_sudokut1.png, id=86, 613.0905pt x 384.2355pt>
 File: resultado_sudokut1.png Graphic file (type png)
 <use resultado_sudokut1.png>
 Package pdftex.def Info: resultado_sudokut1.png  used on input line 119.
 (pdftex.def)             Requested size: 345.0pt x 216.22574pt.
-<resultado_sudokut_centos.png, id=77, 614.89725pt x 386.6445pt>
+<resultado_sudokut_centos.png, id=88, 614.89725pt x 386.6445pt>
 File: resultado_sudokut_centos.png Graphic file (type png)
 <use resultado_sudokut_centos.png>
 Package pdftex.def Info: resultado_sudokut_centos.png  used on input line 120.
 (pdftex.def)             Requested size: 345.0pt x 216.93832pt.
  [4 <./resultado_sudokut1.png> <./resultado_sudokut_centos.png>]
-<ramspeed Centos1.png, id=91, 666.0885pt x 387.24675pt>
-File: ramspeed Centos1.png Graphic file (type png)
-<use ramspeed Centos1.png>
-Package pdftex.def Info: ramspeed Centos1.png  used on input line 127.
-(pdftex.def)             Requested size: 345.0pt x 200.57767pt.
- [5 <./ramspeed Centos1.png>]
-Overfull \hbox (52.80637pt too wide) in paragraph at lines 131--136
+<resultado ramspeed ubuntu.png, id=102, 663.6795pt x 383.63326pt>
+File: resultado ramspeed ubuntu.png Graphic file (type png)
+<use resultado ramspeed ubuntu.png>
+Package pdftex.def Info: resultado ramspeed ubuntu.png  used on input line 127.
+(pdftex.def)             Requested size: 345.0pt x 199.42604pt.
+<resultado ramspeed centos.png, id=103, 663.07726pt x 380.01974pt>
+File: resultado ramspeed centos.png Graphic file (type png)
+<use resultado ramspeed centos.png>
+Package pdftex.def Info: resultado ramspeed centos.png  used on input line 128.
+(pdftex.def)             Requested size: 345.0pt x 197.72737pt.
+ [5 <./resultado ramspeed ubuntu.png> <./resultado ramspeed centos.png>]
+Overfull \hbox (52.80637pt too wide) in paragraph at lines 134--139
 \OT1/cmr/m/n/10 otro pa-ra la apli-ca-cion en s). El codi-go esta dis-po-ni-ble en []https://github.com/davidPalomar-
  []
 
-[6]
-Overfull \hbox (21.41756pt too wide) in paragraph at lines 150--151
-[][]\OT1/cmr/m/n/10 https://wiki.ubuntu.com/PhoronixTestSuite#installing[] 
+
+Overfull \hbox (34.16745pt too wide) in paragraph at lines 146--147
+\OT1/cmr/m/n/10 Ahora clo-na-re-mos el re-po-si-to-rio de []https://github.com/davidPalomar-ugr/iseP4JMeter[]: 
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 158.
+Overfull \hbox (10.41728pt too wide) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 Una vez lo he-mos des-car-ga-do, nos si-tua-mos al ni-vel del ar-chi-vo docker-compose.yml
+ []
 
-[7] (Practica4.aux
+<direccion docker.png, id=113, 714.87074pt x 370.986pt>
+File: direccion docker.png Graphic file (type png)
+<use direccion docker.png>
+Package pdftex.def Info: direccion docker.png  used on input line 161.
+(pdftex.def)             Requested size: 345.0pt x 179.04489pt.
+<salida docker-compose ps.png, id=114, 422.7795pt x 86.12175pt>
+File: salida docker-compose ps.png Graphic file (type png)
+<use salida docker-compose ps.png>
+Package pdftex.def Info: salida docker-compose ps.png  used on input line 166.
+(pdftex.def)             Requested size: 345.0pt x 70.28125pt.
+[6 <./direccion docker.png> <./salida docker-compose ps.png>]
+<version java.png, id=129, 666.69075pt x 137.313pt>
+File: version java.png Graphic file (type png)
+<use version java.png>
+Package pdftex.def Info: version java.png  used on input line 174.
+(pdftex.def)             Requested size: 345.0pt x 71.05534pt.
+<interfaz apache jmeter.png, id=130, 915.42pt x 513.71925pt>
+File: interfaz apache jmeter.png Graphic file (type png)
+<use interfaz apache jmeter.png>
+Package pdftex.def Info: interfaz apache jmeter.png  used on input line 179.
+(pdftex.def)             Requested size: 345.0pt x 193.6084pt.
+<añadir host y port.png, id=131, 659.46375pt x 311.9655pt>
+File: añadir host y port.png Graphic file (type png)
+<use añadir host y port.png>
+Package pdftex.def Info: añadir host y port.png  used on input line 184.
+(pdftex.def)             Requested size: 345.0pt x 163.20834pt.
+ [7 <./version java.png> <./interfaz apache jmeter.png> <./añadir host y port.png>]
+<crear grupo hilos.png, id=140, 519.1395pt x 169.23225pt>
+File: crear grupo hilos.png Graphic file (type png)
+<use crear grupo hilos.png>
+Package pdftex.def Info: crear grupo hilos.png  used on input line 201.
+(pdftex.def)             Requested size: 345.0pt x 112.46573pt.
+<valores por defecto peticion.png, id=141, 539.01375pt x 229.45724pt>
+File: valores por defecto peticion.png Graphic file (type png)
+<use valores por defecto peticion.png>
+Package pdftex.def Info: valores por defecto peticion.png  used on input line 206.
+(pdftex.def)             Requested size: 345.0pt x 146.86612pt.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 208.
+ (D:\Universidad\Latex\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 208.
+<añadir param host y port.png, id=142, 913.61325pt x 207.77625pt>
+File: añadir param host y port.png Graphic file (type png)
+<use añadir param host y port.png>
+Package pdftex.def Info: añadir param host y port.png  used on input line 210.
+(pdftex.def)             Requested size: 345.0pt x 78.4612pt.
+<login administrador.png, id=143, 661.2705pt x 252.945pt>
+File: login administrador.png Graphic file (type png)
+<use login administrador.png>
+Package pdftex.def Info: login administrador.png  used on input line 216.
+(pdftex.def)             Requested size: 345.0pt x 131.96829pt.
+<login alumno.png, id=144, 662.475pt x 251.13824pt>
+File: login alumno.png Graphic file (type png)
+<use login alumno.png>
+Package pdftex.def Info: login alumno.png  used on input line 217.
+(pdftex.def)             Requested size: 345.0pt x 130.78424pt.
+<añadir arbol resultados.png, id=145, 502.87875pt x 73.4745pt>
+File: añadir arbol resultados.png Graphic file (type png)
+<use añadir arbol resultados.png>
+Package pdftex.def Info: añadir arbol resultados.png  used on input line 223.
+(pdftex.def)             Requested size: 345.0pt x 50.40707pt.
+<errores arbol resultados.png, id=146, 660.66824pt x 356.532pt>
+File: errores arbol resultados.png Graphic file (type png)
+<use errores arbol resultados.png>
+Package pdftex.def Info: errores arbol resultados.png  used on input line 228.
+(pdftex.def)             Requested size: 345.0pt x 186.18109pt.
+ [8 <./crear grupo hilos.png> <./valores por defecto peticion.png> <./añadir param host y port.png>] [9 <./login administrador.png> <./login alumno.png> <./añadir arbol resultados.png>]
+<añadir gestor autorizacion.png, id=163, 545.03625pt x 349.305pt>
+File: añadir gestor autorizacion.png Graphic file (type png)
+<use añadir gestor autorizacion.png>
+Package pdftex.def Info: añadir gestor autorizacion.png  used on input line 233.
+(pdftex.def)             Requested size: 345.0pt x 221.10265pt.
+<gestor autorizacion configurado.png, id=164, 660.66824pt x 193.9245pt>
+File: gestor autorizacion configurado.png Graphic file (type png)
+<use gestor autorizacion configurado.png>
+Package pdftex.def Info: gestor autorizacion configurado.png  used on input line 237.
+(pdftex.def)             Requested size: 345.0pt x 101.26741pt.
+ [10 <./errores arbol resultados.png> <./añadir gestor autorizacion.png>] [11 <./gestor autorizacion configurado.png>]
+Overfull \hbox (21.41756pt too wide) in paragraph at lines 254--255
+[][]\OT1/cmr/m/n/10 https://wiki.ubuntu.com/PhoronixTestSuite#installing[] 
+ []
+
+[12] (Practica4.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `Practica4.out' has not changed.
-(rerunfilecheck)             Checksum: 872B1C559DEFC29CD22459E0BCA5CE97;865.
+(rerunfilecheck)             Checksum: 8366E9427209FDA097670BBFDD40037A;1860.
  ) 
 Here is how much of TeX's memory you used:
- 11661 strings out of 478699
- 179556 string characters out of 2858265
+ 11820 strings out of 478699
+ 183582 string characters out of 2858265
  820422 words of memory out of 3000000
- 29569 multiletter control sequences out of 15000+600000
- 408375 words of font info for 43 fonts, out of 8000000 for 9000
+ 29694 multiletter control sequences out of 15000+600000
+ 408710 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,63p,277b,1179s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\rauld\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on Practica4.pdf (7 pages, 290520 bytes).
+ 60i,7n,63p,658b,1179s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\rauld\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\rauld\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/Universidad/Latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Practica4.pdf (12 pages, 740577 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

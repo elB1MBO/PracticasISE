@@ -539,9 +539,9 @@ INPUT Practica4.toc
 INPUT Practica4.toc
 INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmbx10.tfm
 OUTPUT Practica4.toc
+INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmsl10.tfm
 INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmbx12.tfm
 INPUT D:\Universidad\Latex\fonts\tfm\jknappen\ec\tcrm0800.tfm
-INPUT D:\Universidad\Latex\fonts\tfm\public\cm\cmsl10.tfm
 INPUT .\resultado_sudokut1.png
 INPUT .\resultado_sudokut1.png
 INPUT resultado_sudokut1.png
@@ -556,16 +556,128 @@ INPUT .\resultado_sudokut_centos.png
 INPUT .\resultado_sudokut_centos.png
 INPUT .\resultado_sudokut_centos.png
 INPUT .\resultado_sudokut_centos.png
-INPUT .\ramspeed Centos1.png
-INPUT .\ramspeed Centos1.png
-INPUT ramspeed Centos1.png
-INPUT .\ramspeed Centos1.png
-INPUT .\ramspeed Centos1.png
-INPUT .\ramspeed Centos1.png
-INPUT .\ramspeed Centos1.png
+INPUT .\resultado ramspeed ubuntu.png
+INPUT .\resultado ramspeed ubuntu.png
+INPUT resultado ramspeed ubuntu.png
+INPUT .\resultado ramspeed ubuntu.png
+INPUT .\resultado ramspeed ubuntu.png
+INPUT .\resultado ramspeed ubuntu.png
+INPUT .\resultado ramspeed ubuntu.png
+INPUT .\resultado ramspeed centos.png
+INPUT .\resultado ramspeed centos.png
+INPUT resultado ramspeed centos.png
+INPUT .\resultado ramspeed centos.png
+INPUT .\resultado ramspeed centos.png
+INPUT .\resultado ramspeed centos.png
+INPUT .\resultado ramspeed centos.png
+INPUT .\direccion docker.png
+INPUT .\direccion docker.png
+INPUT direccion docker.png
+INPUT .\direccion docker.png
+INPUT .\direccion docker.png
+INPUT .\direccion docker.png
+INPUT .\direccion docker.png
+INPUT .\salida docker-compose ps.png
+INPUT .\salida docker-compose ps.png
+INPUT salida docker-compose ps.png
+INPUT .\salida docker-compose ps.png
+INPUT .\salida docker-compose ps.png
+INPUT .\salida docker-compose ps.png
+INPUT .\salida docker-compose ps.png
+INPUT .\version java.png
+INPUT .\version java.png
+INPUT version java.png
+INPUT .\version java.png
+INPUT .\version java.png
+INPUT .\version java.png
+INPUT .\version java.png
+INPUT .\interfaz apache jmeter.png
+INPUT .\interfaz apache jmeter.png
+INPUT interfaz apache jmeter.png
+INPUT .\interfaz apache jmeter.png
+INPUT .\interfaz apache jmeter.png
+INPUT .\interfaz apache jmeter.png
+INPUT .\interfaz apache jmeter.png
+INPUT .\añadir host y port.png
+INPUT .\añadir host y port.png
+INPUT añadir host y port.png
+INPUT .\añadir host y port.png
+INPUT .\añadir host y port.png
+INPUT .\añadir host y port.png
+INPUT .\añadir host y port.png
+INPUT .\crear grupo hilos.png
+INPUT .\crear grupo hilos.png
+INPUT crear grupo hilos.png
+INPUT .\crear grupo hilos.png
+INPUT .\crear grupo hilos.png
+INPUT .\crear grupo hilos.png
+INPUT .\crear grupo hilos.png
+INPUT .\valores por defecto peticion.png
+INPUT .\valores por defecto peticion.png
+INPUT valores por defecto peticion.png
+INPUT .\valores por defecto peticion.png
+INPUT .\valores por defecto peticion.png
+INPUT .\valores por defecto peticion.png
+INPUT .\valores por defecto peticion.png
+INPUT D:\Universidad\Latex\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT D:\Universidad\Latex\tex\latex\base\omscmr.fd
+INPUT .\añadir param host y port.png
+INPUT .\añadir param host y port.png
+INPUT añadir param host y port.png
+INPUT .\añadir param host y port.png
+INPUT .\añadir param host y port.png
+INPUT .\añadir param host y port.png
+INPUT .\añadir param host y port.png
+INPUT .\login administrador.png
+INPUT .\login administrador.png
+INPUT login administrador.png
+INPUT .\login administrador.png
+INPUT .\login administrador.png
+INPUT .\login administrador.png
+INPUT .\login administrador.png
+INPUT .\login alumno.png
+INPUT .\login alumno.png
+INPUT login alumno.png
+INPUT .\login alumno.png
+INPUT .\login alumno.png
+INPUT .\login alumno.png
+INPUT .\login alumno.png
+INPUT .\añadir arbol resultados.png
+INPUT .\añadir arbol resultados.png
+INPUT añadir arbol resultados.png
+INPUT .\añadir arbol resultados.png
+INPUT .\añadir arbol resultados.png
+INPUT .\añadir arbol resultados.png
+INPUT .\añadir arbol resultados.png
+INPUT .\errores arbol resultados.png
+INPUT .\errores arbol resultados.png
+INPUT errores arbol resultados.png
+INPUT .\errores arbol resultados.png
+INPUT .\errores arbol resultados.png
+INPUT .\errores arbol resultados.png
+INPUT .\errores arbol resultados.png
+INPUT .\añadir gestor autorizacion.png
+INPUT .\añadir gestor autorizacion.png
+INPUT añadir gestor autorizacion.png
+INPUT .\añadir gestor autorizacion.png
+INPUT .\añadir gestor autorizacion.png
+INPUT .\añadir gestor autorizacion.png
+INPUT .\añadir gestor autorizacion.png
+INPUT .\gestor autorizacion configurado.png
+INPUT .\gestor autorizacion configurado.png
+INPUT gestor autorizacion configurado.png
+INPUT .\gestor autorizacion configurado.png
+INPUT .\gestor autorizacion configurado.png
+INPUT .\gestor autorizacion configurado.png
+INPUT .\gestor autorizacion configurado.png
 INPUT Practica4.aux
 INPUT .\Practica4.out
 INPUT .\Practica4.out
+INPUT C:\Users\rauld\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\rauld\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\rauld\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0800.pk
 INPUT C:\Users\rauld\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0800.pk
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -582,3 +694,5 @@ INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsl10.pfb
 INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Universidad\Latex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
