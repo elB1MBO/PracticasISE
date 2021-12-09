@@ -6,6 +6,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{vmargin}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -39,15 +40,14 @@
     captionpos=b,
     breaklines=true,
 }
-
 \begin{document}
 \pagestyle{plain}
 \title{Práctica 4: Benchmarking y Ajuste del Sistema" \\ 
 Ingeniería de Servidores}
 \author{Raúl Durán Racero}
 \begin{figure}
-    \raggedright
-    \includegraphics[width=1.25\textwidth]{benchmarking004.png}
+    \centering
+    \includegraphics[width=\textwidth]{benchmarking004.png}
 \end{figure}
 \maketitle
 \begin{figure}
@@ -137,7 +137,6 @@ para la BD y otro para la aplicación en sí). El código está disponible en
 \href{https://github.com/davidPalomar-ugr/iseP4JMeter}{https://github.com/davidPalomar-ugr/iseP4JMeter}
 donde se dan detalles sobre cómo ejecutar la aplicación en una de nuestras máquinas virtuales.
 
-Instalar Docker y Docker-Compose
 El servidor se distribuye en forma de  una aplicación de contenedores Docker sobre
 Compose, por lo que necesitaremos ambas aplicaciones:
 \begin{lstlisting}
@@ -155,12 +154,14 @@ Una vez lo hemos descargado, nos situamos al nivel del archivo docker-compose.ym
 Con esto, Docker descargará las imágenes base y construirá las nuevas imágenes para
 la aplicación. 
 Podemos comprobar que funciona el servicio correctamente buscando en nuestro navegador:
-\textbf{IP:3000}. Primero deberemos de abrir el puerto 3000. Tendremos esta interfaz: \newline
+\textbf{IP:3000}. Primero deberemos de abrir el puerto 3000 e instalar en UbuntuServer
+mongodb, ya que este sistema de base de datos es necesario para que funcione nuestro servicio. 
+Tendremos esta interfaz: \newline
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{direccion docker.png}
 \end{figure}
-También podemos comprobarlo con el comando \textbf{sudo docker-composer ps}:
+\newline También podemos comprobarlo con el comando \textbf{sudo docker-composer ps}:
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{salida docker-compose ps.png}
@@ -178,12 +179,12 @@ archivo comprimido. Es necesario tener una versión de Java 8 o superior.
     \centering
     \includegraphics[width=\textwidth]{interfaz apache jmeter.png}
 \end{figure}
+\newpage
 \subsection{Test debe tener parametrizados el Host y el Puerto en el Test Plan}
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{añadir host y port.png}
 \end{figure}
-\newpage
 \subsection{Hacer 2 grupos de hebras distintos para simular al acceso de los alumnos
 y los administradores}
 Se nos dice que los credenciales de alumno y administrador se cogen de los archivos
@@ -236,16 +237,21 @@ cada grupo de hebras, ya que el acceso al servicio está protegido por HTTP Basi
 \begin{figure}[hbt!]
     \includegraphics[width=\textwidth]{gestor autorizacion configurado.png}
 \end{figure}
-\newpage
-Podemos ver el nombre de usuario y la contraseña en el archivo mencionado anteriormente
+\newline Podemos ver el nombre de usuario y la contraseña en el archivo mencionado anteriormente
 pruebaEntorno.sh.
+\newpage
+Volvemos a arrancar JMeter, y esta vez habrán accedido correctamente:
+\begin{figure}[hbt!]
+    \includegraphics[width=\textwidth]{login alumno correcto.png}
+    \includegraphics[width=\textwidth]{login administrador correcto.png}
+\end{figure}
+\newpage
 \section{Ejercicio Opcional}
 Con esta información usted podría modificar los parámetros
 de configuración de Apache, PHP o MariaDB para observar un cambio en el
 comportamiento del servidor (CentOS o Ubuntu server) mediante la aplicación
 de un benchmark y analizando el cambio en las prestaciones o mediante el análisis
 de datos de monitorización ante una carga aplicada.
-
 \newpage
 \begin{thebibliography}{99}
     \bibitem[Descargar Phoronix]{descargar phoronix} 

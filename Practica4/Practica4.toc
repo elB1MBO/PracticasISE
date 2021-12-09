@@ -2,8 +2,8 @@
 \contentsline {section}{\numberline {1}Ejercicio 1}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Phoronix en UbuntuServer}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Phoronix en CentOS}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Comparación de Resultados}{4}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Ejercicio 2}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Test debe tener parametrizados el Host y el Puerto en el Test Plan}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {1.3}Comparación de Resultados}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Ejercicio 2}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Test debe tener parametrizados el Host y el Puerto en el Test Plan}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Hacer 2 grupos de hebras distintos para simular al acceso de los alumnos y los administradores}{8}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Ejercicio Opcional}{11}{section.3}%
+\contentsline {section}{\numberline {3}Ejercicio Opcional}{12}{section.3}%
