@@ -122,6 +122,7 @@ Ejecutaremos los mismos tests que en UbuntuServer para comparar resultados:
 Podemos ver como en la primera imagen (UbuntuServer), el test Sudokut ha tardado menos 
 en ejecutarse (26.23s) que en CentOS (32.29s).
 \subsection*{\textbf{RAMspeed:}}
+\newpage
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{resultado ramspeed ubuntu.png}
@@ -161,15 +162,10 @@ Tendremos esta interfaz: \newline
     \centering
     \includegraphics[width=\textwidth]{direccion docker.png}
 \end{figure}
-\newline También podemos comprobarlo con el comando \textbf{sudo docker-composer ps}:
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=\textwidth]{salida docker-compose ps.png}
-\end{figure}
 \newpage
-Ahora, tenemos que instalar JMeter en nuestro sistema host.
-Descargamos el paquete de JMeter y abrimos el ejecutable ApacheJMeter de la carpeta \textsl{bin} del 
-archivo comprimido. Es necesario tener una versión de Java 8 o superior.
+Ahora, tenemos que instalar \textbf{JMeter} en nuestro sistema host.
+Descargamos el paquete de JMeter y abrimos el ejecutable \textsl{ApacheJMeter} de la carpeta \textsl{bin} del 
+archivo comprimido. Es necesario tener una versión de \textbf{Java 8} o superior.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{version java.png}
@@ -203,10 +199,11 @@ en JMeter, uno para el administrador y el otro para el alumno. Para ello:
 \end{figure}
 Dejamos la configuración por defecto. \newline
 Ahora, añadimos una petición por defecto HTTP:
+\newpage
 \begin{figure}[hbt!]
     \includegraphics[width=\textwidth]{valores por defecto peticion.png}
 \end{figure}
-\newline Y metemos nuestros parámetros Host y Port (se escribe de la forma \$\{param\}):
+Y metemos nuestros parámetros Host y Port (se escribe de la forma \$\{param\}):
 \begin{figure}[hbt!]
     \includegraphics[width=\textwidth]{añadir param host y port.png}
 \end{figure}
@@ -217,7 +214,8 @@ cada grupo de hebra, donde tendremos que introducir la ruta, usuario, constrase�
     \includegraphics[width=\textwidth]{login administrador.png}
     \includegraphics[width=\textwidth]{login alumno.png}
 \end{figure}
-\newline La ruta la podemos encontrar en el script pruebaEntorno.sh.
+\newpage
+La ruta la podemos encontrar en el script pruebaEntorno.sh.
 Para ver el resultado de los accesos, podemos usar un árbol de resultados para ambos
 grupos de hilos:
 \begin{figure}[hbt!]
@@ -246,6 +244,8 @@ Volvemos a arrancar JMeter, y esta vez habrán accedido correctamente:
     \includegraphics[width=\textwidth]{login administrador correcto.png}
 \end{figure}
 \newpage
+\subsection{Tokens}
+JWT
 \section{Ejercicio Opcional}
 Con esta información usted podría modificar los parámetros
 de configuración de Apache, PHP o MariaDB para observar un cambio en el
