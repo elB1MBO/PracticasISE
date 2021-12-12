@@ -6,5 +6,8 @@
 \contentsline {section}{\numberline {2}Ejercicio 2}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Test debe tener parametrizados el Host y el Puerto en el Test Plan}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Hacer 2 grupos de hebras distintos para simular al acceso de los alumnos y los administradores}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Tokens}{13}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Ejercicio Opcional}{13}{section.3}%
+\contentsline {subsection}{\numberline {2.3}Añadimos esperas aleatorias (Gaussian Random Timer)}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Recuperar datos alumno}{13}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Muestreo recogido por apiAlumnos.log}{13}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Usar expresión regular para extrar token JWT}{14}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Ejercicio Opcional}{16}{section.3}%

@@ -185,8 +185,10 @@ archivo comprimido. Es necesario tener una versión de \textbf{Java 8} o superio
 y los administradores}
 Se nos dice que los credenciales de alumno y administrador se cogen de los archivos
 \textsl{alumnos.csv} y \textsl{administrador.csv}, respectivamente, que se encuentran en
-el directorio iseP4JMeter/jMeter.
-Escogemos un administrador y un alumno (hacemos cat de los archivos .csv). Yo he escogido:
+el directorio iseP4JMeter/jMeter. Antes de hacer esto, escogeremos un 
+administrador y un alumno (hacemos cat de los archivos .csv), para simplificar
+la comprobación del resto de pasos. Cogeremos los credenciales desde estos
+archivos como último paso. Yo he escogido:
 \begin{description}
     \item[Administrador, contraseña:] suarezgraves@etsii.ugr.es, laborum
     \item[Alumno, constraseña:] margretdonovan@tropoli.com, non  
@@ -244,8 +246,68 @@ Volvemos a arrancar JMeter, y esta vez habrán accedido correctamente:
     \includegraphics[width=\textwidth]{login administrador correcto.png}
 \end{figure}
 \newpage
-\subsection{Tokens}
-JWT
+\subsection{Añadimos esperas aleatorias (Gaussian Random Timer)}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{añadir temporizadorg.png}
+\end{figure}
+\subsection{Recuperar datos alumno}
+Tenemos que hacer una petición HTTP para recuperar los datos del alumno:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{recuperar datos alumno.png}
+\end{figure}
+\newline La ruta la encontraremos, una vez más, en el pruebaEntorno.sh (al final del mismo).
+Repetimos para el administrador (Acceso Administrador). En la ruta, deberemos poner 
+el login de un administrador, ya que si usamos el de un alumno, nos dará error, ya que 
+un alumno no puede consultar los datos de otro alumno.
+\subsection{Muestreo recogido por apiAlumnos.log}
+Se nos pide que el muestreo para simular el acceso de los administradores lo
+debe coger el archivo apiAlumnos.log, usando un Muestreador de Acceso a Log:
+\newpage
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{muestreador de acceso a log1.png}
+    \includegraphics[width=\textwidth]{muestrador configurado1.png}
+\end{figure}
+\subsection{Usar expresión regular para extrar token JWT}
+Tenemos que utilizar una expresión regular para poder extraer el token JWT que hay 
+que añadir a la cabecera de las peticiones. Usaremos el Gestor de Cabecera HTTP:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{añadir gestor cabecera http.png}
+\end{figure}
+\newpage
+También tendremos que añadir un extractor de expresiones regulares para obtener el token:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{añadir extractor de expr reg.png}
+\end{figure}
+\newline Tendremos varios apartados que debemos configurar:
+\begin{description}
+    \item[Nombre de referencia:] Nombre de la variable en la que se guardará el
+    texto extraído. 
+    \item[Expresión Regular:] El patrón con el que el texto hará 'match'. Usaremos los siguientes carácteres especiales:
+    \begin{description}
+        \item[.]  empareja cualquier caracter
+        \item[+]  uno o más veces 
+        \item[?]  para cuando encuentra el primer 'match' exitoso
+    \end{description} 
+    \item[Plantilla:] Agrupa los strings entre paréntesis. Con \$1\$ selecciona el primero.
+    \item[Coincidencia No.:] Dice que coincidencia debe ser escogida. 0 para una aleatoria.
+    \item[Valor por defecto:] En caso de que no haya coincidencia, éste será el valor escogido.  
+\end{description}
+Nos quedaría tal que así:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{expresion regular config.png}
+\end{figure}
+\newline Y ahora configuramos los gestores de cabecera HTTP:
+\newpage
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=\textwidth]{gestor cabecera config.png}
+\end{figure}
 \section{Ejercicio Opcional}
 Con esta información usted podría modificar los parámetros
 de configuración de Apache, PHP o MariaDB para observar un cambio en el
@@ -268,5 +330,6 @@ de datos de monitorización ante una carga aplicada.
     \href{https://jmeter.apache.org/}{https://jmeter.apache.org/}
     \bibitem[Usar JMeter]{usermanual Jmeter}
     \href{https://jmeter.apache.org/usermanual/index.html}{https://jmeter.apache.org/usermanual/index.html}
+
 \end{thebibliography}
 \end{document}
